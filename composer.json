@@ -1,0 +1,25 @@
+{
+  "name":        "entrio/apiresponse",
+  "description": "A simple library that makes it easier to wort with JSON APIs",
+  "keywords":    [
+    "api",
+    "json",
+    "response"
+  ],
+  "license":     "GPL-3.0-only",
+  "authors":     [
+    {
+      "name":  "Alexander Titarenko",
+      "email": "alexander.titarenko@resmi.kz"
+    }
+  ],
+  "type":        "project",
+  "require":     {
+    "php": ">=7.0"
+  },
+  "autoload":    {
+    "psr-4": {
+      "Entrio\\APIResponse\\": "src/"
+    }
+  }
+}
