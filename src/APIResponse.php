@@ -79,7 +79,7 @@ class APIResponse
      * @return \stdClass
      * @throws \Exception
      */
-    public function GetPayloadObject(): \stdClass
+    public function GetPayloadObject()
     {
         if (!$this->validated)
             throw new \Exception('Validate the result using IsSuccessful prior to calling GetPayload or GetPayloadObject');
