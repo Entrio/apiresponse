@@ -86,7 +86,7 @@ class APIResponse
 
         if ($this->payload != null) {
             try {
-                return json_decode(json_encode($this->payload), false, 512, JSON_THROW_ON_ERROR);
+                return json_decode(json_encode($this->payload, JSON_UNESCAPED_UNICODE), false, 512, JSON_THROW_ON_ERROR | JSON_UNESCAPED_UNICODE);
             } catch (\Exception $exception) {
                 throw $exception;
             }
